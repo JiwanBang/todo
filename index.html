@@ -22,21 +22,33 @@
       <div id="main-wrap">
         <div class="headArea"></div>
         <div class="bodyArea">
-          <div class="menuBar1">
-            <ul class="work-item">
-              <li>작업명</li>
-              <li>마감일</li>
-              <li>작성일자</li>
-              <li>내용</li>
-              <li>달성여부</li>
-            </ul>
-          </div>
-          <div class="menuBar2"></div>
-          <div class="menuBar3"></div>
-          <div class="menuBar4"></div>
-          <div class="menuBar5"></div>
+          <div class="menuBar"></div>
+          <!-- <div class="menuBar"></div>
+          <div class="menuBar"></div>
+          <div class="menuBar"></div>
+          <div class="menuBar"></div> -->
         </div>
       </div>
     </div>
+    <div class="input-area">
+      <form action="" id="write">
+        <fieldset>
+          <legend>게시글 등록</legend>
+          <div class="input-box">
+            <label for="title">제목 : </label>
+            <input type="text" id="title" />
+          </div>
+          <div class="post-input">
+            <label for="posting">내용 : </label>
+            <textarea type="text" id="posting"></textarea>
+          </div>
+          <div>
+            <button id="add-btn">등록</button>
+            <button type="reset" id="cancel-btn">취소</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="./view.js"></script>
   </body>
 </html>

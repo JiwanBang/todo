@@ -10,11 +10,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/view.css", (req, res) => {
-  res.sendFile(path.join(boardRoot, "board.css"));
+  res.sendFile(path.join(RootPath, "view.css"));
 });
 
 app.get("/view.js", (req, res) => {
-  res.sendFile(path.join(boardRoot, "board.js"));
+  res.sendFile(path.join(RootPath, "view.js"));
 });
 
 app.listen(3000, () => {

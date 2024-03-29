@@ -5,6 +5,8 @@
 }
 
 #wrap {
+  width: 1500px;
+  height: 1080px;
   display: flex;
   justify-content: flex-start;
 }
@@ -53,7 +55,7 @@
   display: flex;
 }
 
-.bodyArea div {
+.menuBar {
   height: 600px;
   width: 250px;
   border-right: 1px solid lightgray;
@@ -66,4 +68,15 @@ ul {
 
 .work-item {
   border-bottom: 1px solid lightgray;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-area {
+  align-self: baseline;
+  width: 1000px;
+  height: 500px;
 }
