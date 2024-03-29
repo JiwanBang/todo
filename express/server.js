@@ -9,20 +9,11 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(RootPath, "index.html"));
 });
 
-const boardRoot = path.join(__dirname, "..", "board");
-
-app.get("/board", (req, res) => {
-  // res.send("게시판 구현중");
-  res.sendFile(path.join(boardRoot, "board.html"));
-});
-
-app.get("/board.css", (req, res) => {
-  // res.send("게시판 구현중");
+app.get("/view.css", (req, res) => {
   res.sendFile(path.join(boardRoot, "board.css"));
 });
 
-app.get("/board.js", (req, res) => {
-  // res.send("게시판 구현중");
+app.get("/view.js", (req, res) => {
   res.sendFile(path.join(boardRoot, "board.js"));
 });
 

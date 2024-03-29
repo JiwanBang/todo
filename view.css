@@ -59,3 +59,11 @@
   border-right: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
+
+ul {
+  list-style: none;
+}
+
+.work-item {
+  border-bottom: 1px solid lightgray;
+}
