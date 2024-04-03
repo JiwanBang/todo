@@ -37,6 +37,7 @@ console.log(list);
 const reRender = () => {
   console.log(list);
   console.log(listElem);
+  listElem.innerHTML = "";
   list.forEach((item) => {
     listElem.innerHTML += `<ul class="work-item">
     <br />
