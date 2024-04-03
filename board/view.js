@@ -63,3 +63,19 @@ document.getElementById("add-btn").onclick = (e) => {
   e.target.form.title.value = e.target.form.posting.value = "";
   reRender();
 };
+
+const writeBtn = document.getElementById("writebtn1");
+const calcelBtn = document.getElementById("cancel-btn");
+const AreaElem = document.getElementById("modalBackground");
+
+writeBtn.onclick = () => {
+  AreaElem.classList.remove("backOff");
+  AreaElem.classList.add("backOn");
+  console.log("something");
+};
+
+calcelBtn.onclick = () => {
+  AreaElem.classList.remove("backOn");
+  AreaElem.classList.add("backOff");
+  console.log("something");
+};

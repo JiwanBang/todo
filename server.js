@@ -2,8 +2,23 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
+const board = [];
 
-const RootPath = path.join(__dirname, "..");
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.use("/", express.static("board"));
+
+app.post("/", (req, res) => {
+  res.send(
+    JSON.stringify((item, idx) => ({
+      title: item.title,
+      posting: item.posting,
+    }))
+  );
+});
+
+const RootPath = path.join(__dirname, "/board");
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(RootPath, "index.html"));
